@@ -7,7 +7,7 @@ services:
     startCommand: "java -jar target/jwt-security-0.0.1-SNAPSHOT.jar"
     envVars:
       - key: SPRING_DATASOURCE_URL
-        value: jdbc:mysql://your-cloud-db-endpoint:3306/cloud_db
+        value: jdbc:mysql://your-cloud-db-endpoint:3306/cloud_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
       - key: SPRING_DATASOURCE_USERNAME
         value: cloud_user
       - key: SPRING_DATASOURCE_PASSWORD
